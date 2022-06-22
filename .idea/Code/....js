@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     newVal = document.createElement("p");
     newVal.innerHTML = '';
     pTag.appendChild(newVal);
+    var timer = 0;
+    $("#set").click(function(e){
+        e.preventDefault();
+        setResetInterval(true);
+    });
 });
 // Async Tests Example
 /*
